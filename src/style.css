@@ -1,0 +1,152 @@
+/* Reset de estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #3C2D00;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+nav .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav .menu li {
+  margin: 0 15px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+
+nav .menu li a:hover {
+  background-color: #F05033;
+  border-radius: 5px;
+}
+
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3C2D00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #F05033;
+}
+
+nav .menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #3C2D00;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #F05033;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3C2D00;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  nav .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav .menu li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  nav .menu-icon {
+      display: block;
+  }
+
+  nav .menu.active {
+      display: flex;
+  }
+
+  nav .menu li a {
+      padding: 15px;
+  }
+}

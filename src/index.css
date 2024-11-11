@@ -1,0 +1,17 @@
+/* Estilo global para o body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Estilo para o header e o conteúdo da página */
+header, section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
